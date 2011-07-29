@@ -1,0 +1,9 @@
+%br
+%br
+%h3 Upload an colored image to convert an black & white imagem
+%br
+%p= @message
+%br
+%form{:action=>"/converted",:method=>"post",:enctype=>"multipart/form-data"}
+  %input{:type=>"file",:name=>"file"}
+  %input{:type=>"submit",:value=>"Upload"}

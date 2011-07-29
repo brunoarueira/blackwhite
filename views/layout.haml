@@ -1,0 +1,15 @@
+!!!
+%html{html_attrs}
+  %head
+    %title= @title
+    %link{:href => '/stylesheets/application.css', :rel => 'stylesheet', :type => 'text/css'}
+    %script{:src => '/javascripts/application.js', :type => 'text/javascript'}
+  %body
+    #container
+      #header
+        #logo
+          %h1
+            %a{:href => '/'}= @title
+      #content= yield
+    #footer
+      %p#legal= "This is a example application based on <a href='http://sinatrarb.com'>Sinatra</a> made by <a href='http://brunoarueira.com'>Bruno Arueira</a>.<br />Fork it on <a href='http://github.com/brunoarueira/blackwhite'>Black & White</a>"
