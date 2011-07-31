@@ -5,5 +5,5 @@
 %p= @message
 %br
 %form{:action=>"/converted",:method=>"post",:enctype=>"multipart/form-data"}
-  %input{:type=>"file",:name=>"file"}
-  %input{:type=>"submit",:value=>"Upload"}
+  %input{:id=>"image", :type=>"file",:name=>"file", :onchange=>"check_extension(this.value,'convert')"}
+  %input{:id=> "convert", :type=>"submit",:value=>"Convert"}

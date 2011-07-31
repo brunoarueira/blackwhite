@@ -19,6 +19,7 @@ post '/converted' do
     redirect '/'
   end
 
+  # Change the content-type to display image on output
   headers['Content-Type'] = 'image/png'
   image = Magick::Image.read(tmpfile.path)[0]
   image = image.quantize(256, Magick::GRAYColorspace)
