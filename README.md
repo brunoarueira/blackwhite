@@ -5,7 +5,7 @@ Sinatra app example to upload image and convert to black and white!
 
  TODO
 
-* Validate the file is uploaded.
+* Validate the file that is uploaded.
 
  Author
 
